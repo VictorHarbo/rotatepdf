@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 from PyPDF2 import PdfFileReader, PdfFileWriter
 from os import listdir
+from os import getcwd
 
-input_dir = "PATH/input"
-output_dir = "PATH/output"
+cwd = getcwd()
+input_dir = cwd + "/input/"
+output_dir = cwd + "/output/"
 
 value = input("Should the file be turned 90, 180 or 270 degress clockwise? ")
 value = int(value)
