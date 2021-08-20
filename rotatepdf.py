@@ -2,8 +2,8 @@
 from PyPDF2 import PdfFileReader, PdfFileWriter
 from os import listdir
 
-input_dir = "/Users/vhol/Documents/scripts/rotatepdf/input/"
-output_dir = "/Users/vhol/Documents/scripts/rotatepdf/output/"
+input_dir = "PATH/input"
+output_dir = "PATH/output"
 
 value = input("Should the file be turned 90, 180 or 270 degress clockwise? ")
 value = int(value)
