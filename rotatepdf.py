@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
+import pyinputplus as pyip
 from PyPDF2 import PdfFileReader, PdfFileWriter
 from os import listdir
 from os import getcwd
 
+# Gets the working directory 
 cwd = getcwd()
 input_dir = cwd + "/input/"
 output_dir = cwd + "/output/"
 
-value = input("Should the file be turned 90, 180 or 270 degress clockwise? ")
-value = int(value)
+# Makes the user choose how the files should be turned
+value = pyip.inputNum("How many degrees should the pdf files be turned clockwise? " , min=0, max=360)
 
+#Turns all the pdf files in input-folder
 for x in listdir(input_dir):
     if not x.endswith('.pdf'):
         continue
