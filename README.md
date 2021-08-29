@@ -11,3 +11,4 @@ To rotate your .pdf-files with this script put your pdf files into the input fol
     
     python rotatepdf.py
     
+Next you input how many degrees clockwise you want your files to be rotated.
