@@ -1,15 +1,4 @@
 #!/usr/bin/env python3
-
-### CODE TO WORK ON IS COMMENTED OUT
-#import subprocess
-#import sys
-
-#def install(package):
-#    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
-
-#install("pyinputplus")
-#install("PyPDF2")
-
 import pyinputplus as pyip
 from PyPDF2 import PdfFileReader, PdfFileWriter
 from os import listdir
