@@ -6,12 +6,12 @@ To run this script you have to make sure you have the requirements installed. Th
     
     pip install -r requirements.txt
     
-## Use 
+## Use:
 To rotate your .pdf-files with this script put your pdf files into the input folder and run the script with:
     
     python rotatepdf.py
     
 Next you input how many degrees clockwise you want your files to be rotated.
 
-## Planned features
+## Planned features:
 It is my goal to make the script take input and output arguments when rotating a single file. The current folder structure should still be useable, just under a -b --batch flag.
