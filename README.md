@@ -1,5 +1,5 @@
 # rotatepdf
-This is a python script to rotate pdf files. It is run through the command line and can process multiple files that has to be rotated the same way.
+This is a python script to rotate pdf files. It is run through the command line and can process multiple files that has to be rotated the same way. The script supports single file use and batch processing.
 
 ## Setup:
 To run this script you have to make sure you have the requirements installed. These modules can be installed from the requirements.txt file by running:
@@ -7,11 +7,23 @@ To run this script you have to make sure you have the requirements installed. Th
     pip install -r requirements.txt
     
 ## Use:
-To rotate your .pdf-files with this script put your pdf files into the input folder and run the script with:
+### Single file:
+To rotate a single .pdf-files with this script run the following line in the command line:
     
-    python rotatepdf.py
+    python rotatepdf.py path/to/inputfile.pdf path/to/outputfile.pdf
+        
+Next you input how many degrees clockwise you want your file to be rotated.
+### Batch processing:
+To run the script on multiple files at once you run the following line in the command line:
     
-Next you input how many degrees clockwise you want your files to be rotated.
+    python rotatepdf.py -b input output
+
+Now the script asks you what folder the files are located in. Here you enter the input directory and press enter.
+
+## Help
+It is possible to access some further information about the flags inside the script. This can be done like this:
+    
+    python rotatepdf.py -h
 
 ## Planned features:
-It is my goal to make the script take input and output arguments when rotating a single file. The current folder structure should still be useable, just under a -b --batch flag.
+Right now the way to input batch files is not perfect. Idealy I would like to make the second input superfluous, by integrating the INPUT argument into the batch part of the script. 
