@@ -21,7 +21,7 @@ To run the script on multiple files at once you run the following line in the co
 Now the script asks you what folder the files are located in. Here you enter the input directory and press enter.
 
 ## Help
-It is possible to access some further information about the flags inside the script. This can be done like this:
+It is possible to access some further information about the script, when calling it from the commandline. This can be done like this:
     
     python rotatepdf.py -h
 
