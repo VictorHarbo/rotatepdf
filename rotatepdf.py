@@ -8,10 +8,10 @@ from os import listdir, getcwd
 parser = argparse.ArgumentParser()
 parser.add_argument("INPUT", help="Your input file, remember the .pdf ending. If batch processing just type input")
 parser.add_argument("OUTPUT", help="Your output file, remember the .pdf ending. If batch processing just type output")
-parser.add_argument("-b", "--batch", help='''Use this argument to process multiple files. 
+parser.add_argument("-b", "--batch", action="store_true", help='''Use this argument to process multiple files. 
                     If you are using this argument you have to specify where the files are located.
                     This is done after executing the script. When batch prosessing the default output 
-                    folder is the output folder.''', action="store_true")
+                    folder is the output folder.''')
 args = parser.parse_args()
 
 # Gets the working directory and defines our output directory for batch processing
